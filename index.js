@@ -42,6 +42,7 @@ function viewCart() {
           list += `, ${key} at ${val}`
         }
       }
+    }
     
   return list
 }
