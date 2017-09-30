@@ -62,7 +62,8 @@ console.log(viewCart())
 function total() {
   let total = 0;
   for( let o of cart ) {
-    total += Object.values(o)[0]
+    let key = Object.keys(o)[0]
+    total += o[key]
   }
   return total
 }
