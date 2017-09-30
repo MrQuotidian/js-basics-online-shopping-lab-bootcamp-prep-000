@@ -43,7 +43,7 @@ function viewCart() {
       }
     }
   }
-  
+
   return list
 }
 
