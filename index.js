@@ -1,7 +1,8 @@
 var cart = [
   { apples: 4 },
   { bananas: 3 },
-  { watermelon: 6 }
+  { watermelon: 6 },
+  { pear: 120 }
 ];
 
 function getCart() {
