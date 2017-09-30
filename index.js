@@ -1,4 +1,8 @@
-var cart = [];
+var cart = [
+  { apples: 4 },
+  { bananas: 3 },
+  { watermelon: 6 }
+];
 
 function getCart() {
  return cart;
@@ -46,6 +50,8 @@ function viewCart() {
 
   return list
 }
+
+
 
 function total() {
   // write your code here
