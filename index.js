@@ -34,6 +34,7 @@ function viewCart() {
       list += `${key} at ${val}.`
     }
     else
+      list += `${key} at ${val}`
       for( let i=1; i < cart.length; i++ ) {
         obj = cart[i]
         key = Object.keys(obj)[0]
