@@ -11,6 +11,8 @@ function setCart(c) {
 
 function addToCart(item) {
   cart[item] = randomPrice()
+  console.log(`${item} has been added to your cart.`)
+  return cart
 }
 
 function viewCart() {
