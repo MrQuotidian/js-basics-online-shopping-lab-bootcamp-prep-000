@@ -16,7 +16,16 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  // write your code here
+  var list = "In your cart, you have "
+  for( let i in cart ) {
+    let k = Object.keys(cart[i])[0]
+    if( i === car.length-1 ) {
+      list += k + " at " + (cart[i])[k]
+    }
+    else {
+      list += k + " at " + (cart[i])[k] + ", "
+    }
+  }
 }
 
 function total() {
