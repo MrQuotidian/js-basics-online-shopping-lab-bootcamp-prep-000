@@ -49,6 +49,7 @@ function viewCart() {
       }
     }
 
+  console.log(list)
   return list
 }
 
