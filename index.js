@@ -31,20 +31,20 @@ function viewCart() {
     let val = obj[key]
 
     if( cart.length === 1 ) {
-      list += `${key} at ${val}.`
+      list += `${key} at $${val}.`
     }
     else
-      list += `${key} at ${val}`
+      list += `${key} at $${val}`
       for( let i=1; i < cart.length; i++ ) {
         obj = cart[i]
         key = Object.keys(obj)[0]
         val = obj[key]
 
         if(i === cart.length-1) {
-          list += ` and ${key} at ${val}.`
+          list += ` and ${key} at $${val}.`
         }
         else {
-          list += `, ${key} at ${val}`
+          list += `, ${key} at $${val}`
         }
       }
     }
