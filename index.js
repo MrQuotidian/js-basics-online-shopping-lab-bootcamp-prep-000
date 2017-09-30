@@ -32,5 +32,5 @@ function placeOrder(cardNumber) {
 }
 
 function randomPrice() {
-  return ~~((Math.random()+1) * 100)
+  return ~~( ( Math.random()*100 ) + 1 )
 }
