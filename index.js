@@ -10,7 +10,7 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-  cart[item] = randomPrice()
+  cart.push( { [item]: randomPrice() } )
   console.log(`${item} has been added to your cart.`)
   return cart
 }
