@@ -42,7 +42,7 @@ function viewCart() {
         val = obj[key]
 
         if(i === cart.length-1) {
-          list += ` and ${key} at $${val}.`
+          list += `, and ${key} at $${val}.`
         }
         else {
           list += `, ${key} at $${val}`
