@@ -51,7 +51,7 @@ function viewCart() {
   return list
 }
 
-
+console.log(viewCart())
 
 function total() {
   // write your code here
