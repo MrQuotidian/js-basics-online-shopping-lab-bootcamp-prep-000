@@ -60,7 +60,11 @@ function viewCart() {
 console.log(viewCart())
 
 function total() {
-  // write your code here
+  let total = 0;
+  for( let o of cart ) {
+    total += Object.values(o)[0]
+  }
+  return total
 }
 
 function removeFromCart(item) {
