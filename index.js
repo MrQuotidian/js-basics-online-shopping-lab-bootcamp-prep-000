@@ -18,28 +18,29 @@ function addToCart(item) {
 function viewCart() {
   var list = "In your cart, you have "
 
-  if( cart.length === 1 ) {
-    let obj = cart[0]
-    let key = Object.keys(obj)[0]
-    let val = obj[key]
-    list += `${key} at ${val}.`
-  }
-  else if( cart.length === 0) {
+  if( cart.length === 0) {
     list = "Your shopping cart is empty."
   }
   else {
-    list += `${key} at ${val}`
+    let obj = cart[0]
+    let key = Object.keys(obj)[0]
+    let val = obj[key]
+    
+    if( cart.length === 1 ) {
+      list += `${key} at ${val}.`
+    }
+    else 
+      for( let i=1; i < cart.length; i++ ) {
+        obj = cart[i]
+        key = Object.keys(obj)[0]
+        val = obj[key]
 
-    for( let i=1; i < cart.length; i++ ) {
-      let obj = cart[i]
-      let key = Object.keys(obj)[0]
-      let val = obj[key]
-
-      if(i === cart.length-1) {
-        list += ` and ${key} at ${val}.`
-      }
-      else {
-        list += `, ${key} at ${val}`
+        if(i === cart.length-1) {
+          list += ` and ${key} at ${val}.`
+        }
+        else {
+          list += `, ${key} at ${val}`
+        }
       }
     }
   }
