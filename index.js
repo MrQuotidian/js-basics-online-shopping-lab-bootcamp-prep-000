@@ -25,11 +25,11 @@ function viewCart() {
     let obj = cart[0]
     let key = Object.keys(obj)[0]
     let val = obj[key]
-    
+
     if( cart.length === 1 ) {
       list += `${key} at ${val}.`
     }
-    else 
+    else
       for( let i=1; i < cart.length; i++ ) {
         obj = cart[i]
         key = Object.keys(obj)[0]
