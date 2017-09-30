@@ -25,9 +25,6 @@ function viewCart() {
     list += `${key} at ${val}.`
   }
   else if( cart.length === 0) {
-    let obj = cart[0]
-    let key = Object.keys(obj)[0]
-    let val = obj[key]
     list = "Your shopping cart is empty."
   }
   else {
