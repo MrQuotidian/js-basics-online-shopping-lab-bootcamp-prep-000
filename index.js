@@ -21,8 +21,11 @@ function viewCart() {
   let val = obj[key]
   var list = "In your cart, you have "
 
-  if( cart.length-1 === 0 ) {
+  if( cart.length === 1 ) {
     list += `${key} at ${val}.`
+  }
+  else if( cart.length === 0) {
+    list = "Your shopping cart is empty."
   }
   else {
     list += `${key} at ${val}`
