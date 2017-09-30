@@ -10,7 +10,7 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+  cart[item] = randomPrice()
 }
 
 function viewCart() {
@@ -27,4 +27,8 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   // write your code here
+}
+
+function randomPrice() {
+  return ~~((Math.random()+1) * 100)
 }
